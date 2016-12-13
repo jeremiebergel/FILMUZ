@@ -52,8 +52,6 @@
 	font-style: normal;
 }
 
-
-
 html {
     font-size: 62.5%;
 }
@@ -68,6 +66,22 @@ a {
     color: #f3f1e9;
 }
 
+input::-webkit-input-placeholder {
+color: #f3f1e9 !important;
+}
+ 
+input:-moz-placeholder {
+color: #f3f1e9 !important;  
+}
+ 
+input::-moz-placeholder { 
+color: #f3f1e9 !important;  
+}
+ 
+input:-ms-input-placeholder {  
+color: #f3f1e9 !important;  
+}
+
 /*---------------HEADER------------------*/
 
 header {
@@ -75,9 +89,10 @@ header {
     height: 6rem;
 }
 
-.logo {
+img.logo {
+    width: 4%;
     float: left;
-    margin: .8rem 2rem;
+    margin: 0 2rem;
 }
 
 header nav {
@@ -236,7 +251,7 @@ header li:hover {
     float: left;
     width: 49%;
     padding-left: 1%;
-    text-align: right;
+    text-align: center;
 }
 
 .film-text h3 {
