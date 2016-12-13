@@ -230,7 +230,7 @@ header li:hover {
 .film-text h3 {
     display: inline-block;
     font: 23px "Slabo 27px", serif;
-    padding: 1%;
+    padding: 1% 15%;
     margin-right: 20%;
 }
 
