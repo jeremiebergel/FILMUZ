@@ -95,6 +95,11 @@ img.logo {
     margin: 0 2rem;
 }
 
+img.titre {
+    width: 7%;
+    margin: 0.75% 0 0 40%
+}
+
 header nav {
     margin-left: 38%;
 } 

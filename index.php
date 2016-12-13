@@ -2,18 +2,20 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>filmuz</title>
+    <title>FILMUZ</title>
     <link rel="stylesheet" href="css/screen.css">
+    <link rel="icon" href="img-layout/favicon.png" />
 </head>
 <body>
     <header class="header-home clearfix">
-        <a href="index.php"><img src="img-layout/logo.png" class="logo" alt="logo"></a>
+        <a href="index.php"><img src="img-layout/logo-accueil.png" class="logo" alt="logo"></a>
+        <img src="img-layout/titre.png" class="titre" alt="filmuz">
         <div class="search-bar">
 
             <form method="post" action="search.php"/>
             <form method="post" action="search.php"/>
 
-            <input type="text" name="recherche" id="search" placeholder="rechercher une bo">
+            <input type="text" name="recherche" id="search" placeholder="rechercher une bo ">
             <input type="button" name="bouton" id="bouton" value="OK">
         </div>
     </header>

@@ -12,8 +12,9 @@ $stmt_row4b->execute();
 
 <head>
     <meta charset="UTF-8">
-    <title>filmuz // western</title>
+    <title>FILMUZ // western</title>
     <link rel="stylesheet" href="css/screen.css">
+    <link rel="icon" href="img-layout/favicon.png" />
 </head>
 
 <body>
@@ -29,7 +30,7 @@ $stmt_row4b->execute();
         </nav>
         <div class="search-bar">
             <form method="post" action="search.php" />
-            <input type="text" name="recherche" id="search" placeholder="rechercher une bo">
+            <input type="text" name="recherche" id="search" placeholder="rechercher une bo ">
             <input type="button" name="bouton" id="bouton" value="OK">
         </div>
     </header>
