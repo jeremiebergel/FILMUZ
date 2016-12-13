@@ -18,7 +18,7 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
 <head>
     <meta charset="UTF-8">
-    <title>SI PHP (FAUT TROUVER UN TITRE PTN)</title>
+    <title>filmuz // <?=$row['titre']?></title>
     <link rel="stylesheet" href="css/screen.css">
     <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet"> </head>
 
@@ -35,7 +35,7 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
         </nav>
         <div class="search-bar">
             <form method="post" action="search.php" />
-                <input type="text" name="recherche" id="search" placeholder="rechercher">
+                <input type="text" name="recherche" id="search" placeholder="rechercher une bo">
                 <input type="button" name="bouton" id="bouton" value="OK">
         </div>
     </header>

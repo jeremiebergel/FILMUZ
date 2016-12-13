@@ -13,7 +13,7 @@
             <form method="post" action="search.php"/>
             <form method="post" action="search.php"/>
 
-            <input type="text" name="recherche" id="search" placeholder="rechercher">
+            <input type="text" name="recherche" id="search" placeholder="rechercher une bo">
             <input type="button" name="bouton" id="bouton" value="OK">
         </div>
     </header>
