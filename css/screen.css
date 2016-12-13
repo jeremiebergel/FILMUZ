@@ -16,6 +16,7 @@
     clear: both;
 }
 
+
 @font-face {
 	font-family: 'Futura Std';
 	src: url('../fonts/FuturaStd-Bold.eot');
@@ -53,6 +54,7 @@
 }
 
 
+
 html {
     font-size: 62.5%;
 }
@@ -78,6 +80,7 @@ header {
     float: left;
     margin: .8rem 2rem;
 }
+
 
 header nav {
     margin-left: 38%;
@@ -138,7 +141,6 @@ header li:hover {
     background: #fc9643;
 }
 
-
 /*---------------NAV-HOME------------------*/
 
 .nav-big ul {
@@ -148,11 +150,10 @@ header li:hover {
 .nav-big li {
     position: relative;
     width: 25%;
-    height: 100%;
     max-width: 100%;
     display: inline-block;
     list-style-type: none;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .nav-big a {
@@ -199,6 +200,56 @@ header li:hover {
     transition: all .3s ease-in;
 }
 
+/*---------SONG-INFOS---------------*/
+
+.film-info {
+    width: 60%;
+    margin: 5rem auto;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.film-medias {
+    float: left;
+    width: 50%;
+}
+
+.film-medias img, .film-medias iframe {
+    max-width: 100%;
+}
+
+.film-medias iframe {
+    margin-bottom: 1rem;
+}
+
+.film-text {
+    float: left;
+    width: 49%;
+    padding-left: 1%;
+    text-align: right;
+}
+
+.film-text h3 {
+    display: inline-block;
+    font: 23px "Slabo 27px", serif;
+    padding: 1%;
+    margin-right: 20%;
+}
+
+.film-text .h3-western {
+    background: #fc9643;
+}
+
+.film-text .infos p {
+    font: 16px "Slabo 27px", serif;
+    margin-bottom: 10px;
+}
+
+.type-info {
+    display: block;
+    margin-bottom: 2px;
+    font: bold italic 12px "Futura Std", sans-serif;
+
 /*---------------PAGE-FILM------------------*/
 
 .div-film {
@@ -232,4 +283,5 @@ section {
 
 .div-film section.row3 div:first-child {
     margin-left: 12%;
+
 }
