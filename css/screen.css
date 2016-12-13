@@ -228,7 +228,7 @@ header li:hover {
 /*---------SONG-INFOS---------------*/
 
 .film-info {
-    width: 70%;
+    width: 65%;
     max-width: 1200px;
     margin: 5rem auto;
     padding: 2rem;
@@ -251,9 +251,9 @@ header li:hover {
 
 .film-text {
     float: right;
-    width: 33%;
+    text-align: left;
+    width: 45%;
     padding-left: 1%;
-    text-align: right;
 }
 
 .film-text h3 {
@@ -276,6 +276,7 @@ header li:hover {
     margin: 2vh 0;
     font: bold italic 12px "Futura Std", sans-serif;
 }
+
 
 /*---------------PAGE-FILM------------------*/
 
