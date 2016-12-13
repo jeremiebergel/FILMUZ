@@ -3,12 +3,12 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Futura Std', Arial, sans-serif;
 }
 
 .clearfix::before,
 .clearfix::after {
-    content: '';
+    content: ' ';
     display: table;
 }
 
@@ -16,12 +16,57 @@
     clear: both;
 }
 
+
+@font-face {
+	font-family: 'Futura Std';
+	src: url('../fonts/FuturaStd-Bold.eot');
+	src: url('../fonts/FuturaStd-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/FuturaStd-Bold.woff2') format('woff2'),
+		url('../fonts/FuturaStd-Bold.woff') format('woff'),
+		url('../fonts/FuturaStd-Bold.ttf') format('truetype'),
+		url('../fonts/FuturaStd-Bold.svg#FuturaStd-Bold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Futura Std';
+	src: url('../fonts/FuturaStd-Book.eot');
+	src: url('../fonts/FuturaStd-Book.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/FuturaStd-Book.woff2') format('woff2'),
+		url('../fonts/FuturaStd-Book.woff') format('woff'),
+		url('../fonts/FuturaStd-Book.ttf') format('truetype'),
+		url('../fonts/FuturaStd-Book.svg#FuturaStd-Book') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Futura Std';
+	src: url('../fonts/FuturaStd-Medium.eot');
+	src: url('../fonts/FuturaStd-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/FuturaStd-Medium.woff2') format('woff2'),
+		url('../fonts/FuturaStd-Medium.woff') format('woff'),
+		url('../fonts/FuturaStd-Medium.ttf') format('truetype'),
+		url('../fonts/FuturaStd-Medium.svg#FuturaStd-Medium') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+
+
+
 html {
     font-size: 62.5%;
 }
 
-img {
-    display: block;
+body {
+    width: 100%;
+    background: #f3f1e9;
+}
+
+a {
+    text-decoration: none;
+    color: #f3f1e9;
 }
 
 /*---------------HEADER------------------*/
@@ -36,6 +81,33 @@ header {
     margin: .8rem 2rem;
 }
 
+
+header nav {
+    margin-left: 38%;
+} 
+
+header ul {
+    list-style-type: none;
+}
+
+header li {
+    font-style: italic;
+    font-size: 25px;
+    display: inline-block;
+    float: left;
+    margin: 1%;
+    opacity: 0.3;
+    transition: opacity 0.5s;
+}
+
+#active {
+    opacity: 1;
+}
+
+header li:hover {
+    opacity: 1;
+}
+
 .search-bar {
     float: right;
     margin: 2rem 2rem 0 0;
@@ -44,7 +116,7 @@ header {
 #search, #bouton {
     border: none;
     color: #f3f1e9;
-    background: #1e1818;
+    background: none;
 }
 
 #search:focus, #bouton:focus {
@@ -63,6 +135,10 @@ header {
 
 .header-home {
     background: #1e1818;
+}
+
+.header-western {
+    background: #fc9643;
 }
 
 /*---------------NAV-HOME------------------*/
@@ -87,9 +163,10 @@ header {
 }
 
 .nav-big img {
+    display: block;
     width: 100%;
     max-width: 100%;
-    height: 684px;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -98,7 +175,7 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    height: 684px;
+    height: 100%;
     line-height: 684px;
     text-align: center;
     z-index: 2;
@@ -122,8 +199,6 @@ header {
     letter-spacing: 3px;
     transition: all .3s ease-in;
 }
-
-
 
 /*---------SONG-INFOS---------------*/
 
@@ -173,5 +248,40 @@ header {
 .type-info {
     display: block;
     margin-bottom: 2px;
-    font: bold italic 12px Arial, sans-serif;
+    font: bold italic 12px "Futura Std", sans-serif;
+
+/*---------------PAGE-FILM------------------*/
+
+.div-film {
+    width: 80%;
+    margin: 0 auto;
+}
+
+section {
+    float: left;
+    margin-top: 2%;
+    
+}
+
+.div-film section div {
+    display: inline; 
+    width: 25%; 
+}
+
+.div-film img {
+    width: 20%;
+    background: #FFF;
+    padding: 10px;
+    margin: 2.5%;
+    margin-right: 0;
+    transition: width 0.5s;
+}
+
+.div-film img:hover {
+    width: 21%;
+}
+
+.div-film section.row3 div:first-child {
+    margin-left: 12%;
+
 }
