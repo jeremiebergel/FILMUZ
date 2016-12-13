@@ -1,3 +1,18 @@
+<?php
+require_once "connect.php";
+
+if(isset($_GET['id'])){
+    $id = $_GET['id'];
+} else {
+    $id = 1;
+}
+
+$sql = "SELECT `type`, `titre`, `playlist`, `image`, `annee`, `compositeur`, `compobio` FROM `filmuz` WHERE `id` = :id;";
+$stmt = $pdo->prepare($sql);
+$stmt->bindValue(':id', $id);
+$stmt->execute();
+$row = $stmt->fetch(PDO::FETCH_ASSOC);
+?>
 <!DOCTYPE html>
 <html lang="fr">
 
