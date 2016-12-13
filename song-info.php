@@ -44,19 +44,15 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
             <img src="<?=$row['image']?>" alt="" class="affiche">
         </div>
         <div class="film-text">
-
-            <div class="infos">
-
                 <h3 class="h3-western"><?=$row['titre']?></h3>
                 <span class="type-info">écouter bande originale</span>
-                <iframe src="<?=$row['playlist']?>&theme=white" width="360" height="330" frameborder="0" allowtransparency="true"></iframe>
+                <iframe src="<?=$row['playlist']?>&theme=white" width="340" height="280" frameborder="0" allowtransparency="true"></iframe>
                 <span class="type-info">date de sortie du film</span>
                 <p><?=$row['annee']?></p>
                 <span class="type-info">compositeur</span>
                 <p><?=$row['compositeur']?></p>
                 <span class="type-info">à propos du compositeur</span>
                 <p><?=$row['compobio']?></p>
-            </div>
         </div>
      </div>
 </body>
