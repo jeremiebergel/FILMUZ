@@ -16,7 +16,6 @@
     clear: both;
 }
 
-
 @font-face {
 	font-family: 'Futura Std';
 	src: url('../fonts/FuturaStd-Bold.eot');
@@ -80,7 +79,6 @@ header {
     float: left;
     margin: .8rem 2rem;
 }
-
 
 header nav {
     margin-left: 38%;
@@ -249,6 +247,7 @@ header li:hover {
     display: block;
     margin-bottom: 2px;
     font: bold italic 12px "Futura Std", sans-serif;
+}
 
 /*---------------PAGE-FILM------------------*/
 
