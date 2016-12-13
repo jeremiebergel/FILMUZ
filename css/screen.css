@@ -139,6 +139,18 @@ header li:hover {
     background: #fc9643;
 }
 
+.header-scifi {
+    background: #79e07e;
+}
+
+.header-action {
+    background: #751616;
+}
+
+.header-disney {
+    background: #6bbfbf;
+}
+
 /*---------------NAV-HOME------------------*/
 
 .nav-big ul {
