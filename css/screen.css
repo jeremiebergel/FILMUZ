@@ -127,31 +127,51 @@ header {
 
 /*---------SONG-INFOS---------------*/
 
-.films img {
-    display: inline-block;
-    cursor: pointer;
-}
-.modal-song {
-/*    display: none;  */
-    position: fixed; 
-    top: 0;
-    z-index: 20;
-    width: 100%; 
-    height: 100%; 
-    background: rgba(0,0,0,0.5);
-    overflow: auto;
-    font: 16px Arial, sans-serif;
-    text-align: center;
+.film-info {
+    width: 60%;
+    margin: 5rem auto;
+    padding: 2rem;
+    box-sizing: border-box;
 }
 
-.song-container {
-    width: 80%;
-    padding: 2rem;
-    margin: 10rem auto;
-    background: #f3f1e9;
-}
-.song-img {
+.film-medias {
     float: left;
     width: 50%;
 }
 
+.film-medias img, .film-medias iframe {
+    max-width: 100%;
+}
+
+.film-medias iframe {
+    margin-bottom: 1rem;
+}
+
+.film-text {
+    float: left;
+    width: 49%;
+    padding-left: 1%;
+    text-align: right;
+}
+
+.film-text h3 {
+    display: inline-block;
+    font: 23px "Slabo 27px", serif;
+    padding: 1%;
+    margin-right: 20%;
+}
+
+.film-text .h3-western {
+    background: #fc9643;
+}
+
+.film-text .infos p {
+    font: 16px "Slabo 27px", serif;
+    margin-bottom: 10px;
+}
+
+.type-info {
+    display: block;
+    margin-bottom: 2px;
+    font: bold italic 12px Arial, sans-serif;
+}
