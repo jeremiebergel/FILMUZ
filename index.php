@@ -16,7 +16,7 @@
 
             <input type="text" name="recherche" id="search" placeholder="rechercher une bo ">
             <input type="button" name="bouton" class="bouton bouton2" value="OK">
-        </div>
+            <input type="button" name="bouton" class="bouton" id="back">
     </header>
     <nav class="nav-big">
         <ul>
