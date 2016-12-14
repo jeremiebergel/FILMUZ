@@ -86,7 +86,7 @@ color: #f3f1e9 !important;
 
 header {
     width: 100%;
-    height: 6rem;
+    height: 10%;
 }
 
 img.logo {
@@ -104,11 +104,11 @@ header nav {
     margin-left: 38%;
 } 
 
-header ul {
+header nav ul {
     list-style-type: none;
 }
 
-header li {
+header nav li {
     font-style: italic;
     font-size: 25px;
     display: inline-block;
@@ -155,19 +155,19 @@ header li:hover {
     background: #1e1818;
 }
 
-.header-western {
+.header-western, .h3-western {
     background: #fc9643;
 }
 
-.header-scifi {
+.header-sci-fi, .h3-sci-fi {
     background: #79e07e;
 }
 
-.header-action {
+.header-action, .h3-action {
     background: #751616;
 }
 
-.header-disney {
+.header-disney, .h3-disney {
     background: #6bbfbf;
 }
 
@@ -183,7 +183,7 @@ header li:hover {
     max-width: 100%;
     display: inline-block;
     list-style-type: none;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .nav-big a {
@@ -196,7 +196,6 @@ header li:hover {
     display: block;
     width: 100%;
     max-width: 100%;
-    height: 100%;
     object-fit: cover;
 }
 
@@ -267,10 +266,6 @@ header li:hover {
     padding: 1% 15%;
 }
 
-.film-text .h3-western {
-    background: #fc9643;
-}
-
 .film-text p {
     font: 16px "Slabo 27px", serif;
     margin-bottom: 10px;
@@ -316,5 +311,85 @@ section {
 
 .div-film section.row3 div:first-child {
     margin-left: 12%;
+
+}
+
+
+/*---------SONG-INFOS---------------*/
+
+.adm-index {
+    width: 80%;
+    height: auto;
+    margin: 5rem auto;
+}
+
+.add-form, .movie-list {
+    float: left;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+/*--FORM-AJOUTER--*/
+
+.add-form {
+    width: 40%;
+    height: auto;
+}
+
+/*--LISTE-DE-FILMS--*/
+.movie-list {
+    width: 60%;
+    height: auto;
+    padding-left: 2rem;
+    border-left: 1px dotted #000;
+}
+
+h3.adm-titre {
+    font: 24px 'Futura Std', Arial, sans-serif;
+    text-align: center;
+}
+
+.titre-film {
+  list-style-type: none;
+    font: 16px "Slabo 27px", serif;
+}
+
+.titre-film span {
+    font-size: 12px;
+    margin-left: 2rem;
+}
+
+.titre-film span a {
+    color: #ccc;
+}
+
+.titre-film a:hover {
+    color: #000;
+}
+
+/*-----------FORMULAIRES-----------*/
+
+fieldset {
+    border: none;
+}
+
+fieldset label {
+    font-size: 14px;
+}
+
+fieldset input {
+    width: 60%;
+    height: 20px;
+    margin-top: 2%;
+}
+
+fieldset textarea {
+    width: 90%;
+}
+
+fieldset button {
+    width: 100px;
+    margin: 2rem 0;
+    padding: 1rem;
 
 }
