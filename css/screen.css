@@ -386,3 +386,29 @@ h3.adm-titre {
     width: 100%;
     margin: 250% 500%;
 }
+
+/*-----------FORMULAIRES-----------*/
+
+fieldset {
+    border: none;
+}
+
+fieldset label {
+    font-size: 14px;
+}
+
+fieldset input {
+    width: 60%;
+    height: 20px;
+    margin-top: 2%;
+}
+
+fieldset textarea {
+    width: 90%;
+}
+
+fieldset button {
+    width: 100px;
+    margin: 2rem 0;
+    padding: 1rem;
+}
