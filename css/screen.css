@@ -349,6 +349,29 @@ div.back img {
     height: auto;
 }
 
+
+/*---------SONG-INFOS---------------*/
+
+.adm-index {
+    width: 80%;
+    height: auto;
+    margin: 5rem auto;
+}
+
+.add-form, .movie-list {
+    float: left;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+/*--FORM-AJOUTER--*/
+
+.add-form {
+    width: 40%;
+    height: auto;
+}
+
+/*--LISTE-DE-FILMS--*/
 .movie-list {
     width: 60%;
     height: auto;
@@ -360,8 +383,6 @@ h3.adm-titre {
     font: 24px 'Futura Std', Arial, sans-serif;
     text-align: center;
 }
-
-
 
 .titre-film {
   list-style-type: none;
@@ -379,6 +400,33 @@ h3.adm-titre {
 
 .titre-film a:hover {
     color: #000;
+}
+
+/*-----------FORMULAIRES-----------*/
+
+fieldset {
+    border: none;
+}
+
+fieldset label {
+    font-size: 14px;
+}
+
+fieldset input {
+    width: 60%;
+    height: 20px;
+    margin-top: 2%;
+}
+
+fieldset textarea {
+    width: 90%;
+}
+
+fieldset button {
+    width: 100px;
+    margin: 2rem 0;
+    padding: 1rem;
+
 }
 
 
