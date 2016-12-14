@@ -11,14 +11,13 @@
                 <a href="index.php"><img src="img-layout/logo-accueil.png" class="logo" alt="logo"></a>
                 <img src="img-layout/titre.png" class="titre" alt="filmuz">
                 <div class="search-bar">
-
-            <form method="post" action="search.php"/>
-
-            <input type="text" name="recherche" id="search" placeholder="rechercher une bo ">
-            <input type="button" name="bouton" class="bouton bouton2" value="OK">
-            <input type="button" name="bouton" class="bouton" id="back">
-        </div>
-    </header>
+                      <form method="post" action="search.php">
+                          <input type="text" name="recherche" id="search" placeholder="rechercher une bo ">
+                          <input type="button" name="bouton" class="bouton bouton2" value="OK">
+                          <input type="button" name="bouton" class="bouton" id="back">
+                      </form>
+                </div>
+  </header>
     <nav class="nav-big">
         <ul>
             <li><a href="genre.php?type=western"><img src="img-content/western.jpg" alt=""><div class="nav-genre"><span>western</span></div></a></li>

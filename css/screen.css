@@ -349,29 +349,6 @@ div.back img {
     height: auto;
 }
 
-
-/*---------SONG-INFOS---------------*/
-
-.adm-index {
-    width: 80%;
-    height: auto;
-    margin: 5rem auto;
-}
-
-.add-form, .movie-list {
-    float: left;
-    padding: 1rem;
-    box-sizing: border-box;
-}
-
-/*--FORM-AJOUTER--*/
-
-.add-form {
-    width: 40%;
-    height: auto;
-}
-
-/*--LISTE-DE-FILMS--*/
 .movie-list {
     width: 60%;
     height: auto;
@@ -434,7 +411,4 @@ fieldset button {
     width: 100px;
     margin: 2rem 0;
     padding: 1rem;
-
 }
-
-
