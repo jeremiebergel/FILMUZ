@@ -129,12 +129,29 @@ header li:hover {
 .search-bar {
     float: right;
     margin: 2rem 2rem 0 0;
+    width: 30%;
+    text-align: right;
+
 }
 
-#search, #bouton {
+#search, .bouton {
     border: none;
     color: #f3f1e9;
     background: none;
+}
+
+.bouton {
+    cursor: pointer;
+}
+
+.bouton2 {
+    margin-right: 3%;
+}
+
+#back {
+    width: 5%;
+    background: url('../img-layout/back.png') no-repeat;
+    background-size: 80%;
 }
 
 #search:focus, #bouton:focus {
@@ -288,15 +305,14 @@ header li:hover {
 section {
     float: left;
     margin-top: 2%;
-    
 }
 
 .div-film section div {
     display: inline; 
-    width: 25%; 
+    width: 25%;
 }
 
-.div-film img {
+.div-film img.affiche {
     width: 20%;
     background: #FFF;
     padding: 10px;
@@ -305,13 +321,32 @@ section {
     transition: width 0.5s;
 }
 
-.div-film img:hover {
+.div-film img.affiche:hover {
     width: 21%;
 }
 
-.div-film section.row3 div:first-child {
-    margin-left: 12%;
 
+div.back img {
+    max-width: 30%;
+}
+
+/*---------BACK---------------*/
+
+.adm-index {
+    width: 80%;
+    height: auto;
+    margin: 5rem auto;
+}
+
+.add-form, .movie-list {
+    float: left;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.add-form {
+    width: 40%;
+    height: auto;
 }
 
 
@@ -393,3 +428,5 @@ fieldset button {
     padding: 1rem;
 
 }
+
+
