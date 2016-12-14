@@ -402,6 +402,14 @@ h3.adm-titre {
     color: #000;
 }
 
+.result p {
+    font: 20px "Slabo 27px", serif;
+    color: #aaaaaa;
+    text-align: center;
+    width: 100%;
+    margin: 250% 500%;
+}
+
 /*-----------FORMULAIRES-----------*/
 
 fieldset {
