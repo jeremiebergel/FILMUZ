@@ -11,7 +11,7 @@
                 <a href="index.php"><img src="img-layout/logo-accueil.png" class="logo" alt="logo"></a>
                 <img src="img-layout/titre.png" class="titre" alt="filmuz">
                 <div class="search-bar">
-                      <form method="post" action="search.php">
+                      <form method="get" action="search.php">
                           <input type="text" name="recherche" id="search" placeholder="rechercher une bo ">
                           <input type="button" name="bouton" class="bouton bouton2" value="OK">
                           <a href="backindex.php"><input type="button" name="bouton" class="bouton" id="back"></a>
