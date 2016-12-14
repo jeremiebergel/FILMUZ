@@ -155,19 +155,19 @@ header li:hover {
     background: #1e1818;
 }
 
-.header-western {
+.header-western, .h3-western {
     background: #fc9643;
 }
 
-.header-scifi {
+.header-sci-fi, .h3-sci-fi {
     background: #79e07e;
 }
 
-.header-action {
+.header-action, .h3-action {
     background: #751616;
 }
 
-.header-disney {
+.header-disney, .h3-disney {
     background: #6bbfbf;
 }
 
@@ -265,10 +265,6 @@ header li:hover {
     display: inline-block;
     font: 23px "Slabo 27px", serif;
     padding: 1% 15%;
-}
-
-.film-text .h3-western {
-    background: #fc9643;
 }
 
 .film-text p {
