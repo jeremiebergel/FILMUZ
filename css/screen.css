@@ -379,12 +379,9 @@ h3.adm-titre {
     color: #000;
 }
 
-.result p {
-    font: 20px "Slabo 27px", serif;
-    color: #aaaaaa;
-    text-align: center;
-    width: 100%;
-    margin: 250% 500%;
+.change-form {
+    width: 60%;
+    margin: 2rem auto;
 }
 
 /*-----------FORMULAIRES-----------*/
@@ -407,8 +404,19 @@ fieldset textarea {
     width: 90%;
 }
 
-fieldset button {
+fieldset input[type="submit"] {
     width: 100px;
+    height: 40px;
     margin: 2rem 0;
     padding: 1rem;
+}
+
+/*--------NO-SEARCH-RESULT-----*/
+
+.result p {
+    font: 20px "Slabo 27px", serif;
+    color: #aaaaaa;
+    text-align: center;
+    width: 100%;
+    margin: 250% 500%;
 }

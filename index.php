@@ -14,7 +14,7 @@
                       <form method="post" action="search.php">
                           <input type="text" name="recherche" id="search" placeholder="rechercher une bo ">
                           <input type="button" name="bouton" class="bouton bouton2" value="OK">
-                          <input type="button" name="bouton" class="bouton" id="back">
+                          <a href="backindex.php"><input type="button" name="bouton" class="bouton" id="back"></a>
                       </form>
                 </div>
   </header>
