@@ -118,14 +118,11 @@ header nav li {
     transition: opacity 0.5s;
 }
 
-#active {
+header li:hover, nav #active {
     opacity: 1;
 }
 
-header li:hover {
-    opacity: 1;
-}
-
+/*---SEARCH-BAR---*/
 .search-bar {
     float: right;
     margin: 2rem 2rem 0 0;
@@ -167,6 +164,8 @@ header li:hover {
 #bouton {
     margin-left: 5px;
 }
+
+/*---HEADER-BG---*/
 
 .header-home {
     background: #1e1818;

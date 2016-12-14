@@ -7,6 +7,8 @@ if(isset($_GET['id'])){
     $id = 1;
 }
 
+//requete sql recupere tous les titres de films et id associes dans la table filmuz
+//et trie par ordre alphabetique des titres de films
 $sql = "SELECT `titre`, `id` FROM `filmuz` ORDER BY `titre`";
 $stmt = $pdo->prepare($sql);
 $stmt->execute();

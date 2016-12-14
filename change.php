@@ -1,10 +1,12 @@
 <?php
+//connexion base de donnees
 require_once "connect.php";
+
+//si id existe, alors $id = id precise dans url
 if(isset($_GET['id'])){
     $id = (int) $_GET['id'];
-} else {
-    header('Location: backindex.php');
 }
+
 $sql = "SELECT `id`, `type`, `titre`, `playlist`, `image`, `annee`, `compositeur`, `compobio`
 FROM 
     `filmuz` 
@@ -15,10 +17,14 @@ $stmt = $pdo->prepare($sql);
 $stmt->bindValue(':id', $id, PDO::PARAM_INT);
 $stmt->execute();
 $row = $stmt->fetch(PDO::FETCH_ASSOC);
+
+//si $row n'existe pas, retour à backindex.php
 if(!$row){
     header('Location: backindex.php');
 }
 ?>
+
+
 <!DOCTYPE html>
 <html lang="fr">
 
