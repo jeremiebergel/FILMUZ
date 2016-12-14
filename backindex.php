@@ -34,31 +34,31 @@ $stmt->execute();
 
             <div>
                 <label for="titre">Titre</label>
-                <input type="text" name="titre" id="titre" placeholder="titre du film">
+                <input type="text" name="titre" id="titre" placeholder="titre du film" required>
             </div>
             <div>
                 <label for="type">Type</label>
-                <input type="text" name="type" id="type" placeholder="type du film">
+                <input type="text" name="type" id="type" placeholder="type du film" required>
             </div>
             <div>
                 <label for="playlist">Playlist</label>
-                <input type="url" name="playlist" id="playlist" placeholder="lien de la musique">
+                <input type="url" name="playlist" id="playlist" placeholder="lien de la musique" required>
             </div>
             <div>
                 <label for="image">Image </label>
-                <input type="text" name="image" id="image">
+                <input type="text" name="image" id="image" required>
             </div>
             <div>
                 <label for="annee">Année</label>
-                <input type="text" name="annee" id="annee" placeholder="année du film">
+                <input type="text" name="annee" id="annee" placeholder="année du film" required>
             </div>
             <div>
                 <label for="compositeur">Compositeur</label>
-                <input type="text" name="compositeur" id="compositeur" placeholder="nom du compositeur">
+                <input type="text" name="compositeur" id="compositeur" placeholder="nom du compositeur" required>
             </div>
             <div>
                 <label for="compobio">Biographie</label>
-                <textarea rows="10" name="compobio" placeholder="description + anecdote"></textarea>
+                <textarea rows="10" name="compobio" placeholder="description + anecdote" required></textarea>
             </div>
             <input type="submit" value="Valider">
             </form>
