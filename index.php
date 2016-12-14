@@ -9,7 +9,7 @@
 <body>
     <header class="header-home clearfix">
                 <a href="index.php"><img src="img-layout/logo-accueil.png" class="logo" alt="logo"></a>
-                <img src="img-layout/titre.png" class="titre" alt="filmuz">
+                <a href="http://www.nyan.cat"><img src="img-layout/titre.png" class="titre" alt="filmuz"></a>
                 <div class="search-bar">
                       <form method="get" action="search.php">
                           <input type="text" name="recherche" id="search" placeholder="rechercher une bo ">
