@@ -38,9 +38,9 @@ $stmt_row4->execute();
             </div>
 
         <?php endwhile; ?>
-
     </section>
 </div>
+<?php include "include/footer.html"; ?>
 </body>
 
 </html>

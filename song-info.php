@@ -44,6 +44,7 @@ if (!$row){
                 <p><?=$row['compobio']?></p>
         </div>
      </div>
+    <?php include "include/footer.html"; ?>
 </body>
 
 </html>

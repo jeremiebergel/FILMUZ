@@ -67,19 +67,19 @@ a {
 }
 
 input::-webkit-input-placeholder {
-color: #f3f1e9 !important;
+color: #f3f1e9;
 }
  
 input:-moz-placeholder {
-color: #f3f1e9 !important;  
+color: #f3f1e9;
 }
  
 input::-moz-placeholder { 
-color: #f3f1e9 !important;  
+color: #f3f1e9;
 }
  
 input:-ms-input-placeholder {  
-color: #f3f1e9 !important;  
+color: #f3f1e9;
 }
 
 /*---------------HEADER------------------*/
@@ -414,19 +414,41 @@ fieldset input[type="submit"] {
 }
 
 ::-webkit-input-placeholder {
-    color: #000;
+    color: #aaaaaa;
+    font-style: italic;
 }
 
 :-moz-placeholder { /* Firefox 18- */
-    color: #000;
+    color: #aaaaaa;
+    font-style: italic;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-    color: #000;
+    color: #aaaaaa;
+    font-style: italic;
 }
 
 :-ms-input-placeholder {
-    color: #000;
+    color: #aaaaaa;
+    font-style: italic;
+}
+
+/*--------FOOTER-----*/
+
+footer {
+    width: 100%;
+    height: 5rem;
+    background: #dbd6c5;
+    clear: both;
+}
+
+footer p {
+    font-style: italic;
+    color: #7a7669;
+    text-align: center;
+    float: left;
+    margin: 1% 0 0 40%;
+
 }
 
 /*--------NO-SEARCH-RESULT-----*/
