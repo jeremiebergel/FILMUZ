@@ -40,7 +40,7 @@ $stmt2->execute();
 
             <div>
                 <label for="titre">Titre</label>
-                <input type="text" name="titre" id="titre" placeholder="titre du film" required>
+                <input type="text" name="titre" id="titre" placeholder="Inception" required>
             </div>
             <div>
                 <label for="type">Genre</label>
@@ -52,23 +52,23 @@ $stmt2->execute();
             </div>
             <div>
                 <label for="playlist">Playlist</label>
-                <input type="url" name="playlist" id="playlist" placeholder="lien de la musique" required>
+                <input type="url" name="playlist" placeholder="https://embed.spotify.com/?uri=spotify%3Aalbum%3A2qvA7HmSg1iM6XMiFF76dp" required>
             </div>
             <div>
                 <label for="image">Image </label>
-                <input type="text" name="image" id="image" required>
+                <input type="text" name="image" required>
             </div>
             <div>
                 <label for="annee">Année</label>
-                <input type="text" name="annee" id="annee" placeholder="année du film" required>
+                <input type="text" name="annee" placeholder="2010" required>
             </div>
             <div>
                 <label for="compositeur">Compositeur</label>
-                <input type="text" name="compositeur" id="compositeur" placeholder="nom du compositeur" required>
+                <input type="text" name="compositeur" placeholder="Hans Zimmer" required>
             </div>
             <div>
                 <label for="compobio">Biographie</label>
-                <textarea rows="10" name="compobio" placeholder="description + anecdote" required></textarea>
+                <textarea rows="10" name="compobio" placeholder="Best film ever" required></textarea>
             </div>
             <input type="submit" value="Valider">
             </form>
