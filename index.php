@@ -9,7 +9,7 @@
 <body>
 <?php
 //appel de header.php
-include "header.php";
+include "include/header.php";
 
 //connexion a la base de donnees
 require_once "connect.php";

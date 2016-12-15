@@ -27,7 +27,7 @@ if (!$row){
 </head>
 
 <body>
-    <?php include "header.php"?>
+    <?php include "include/header.php"?>
     <div class="film-info clearfix">
         <div class="film-medias">
             <img src="<?=$row['image']?>" alt="" class="affiche">
