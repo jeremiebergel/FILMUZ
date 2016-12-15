@@ -56,8 +56,6 @@ $stmt2->execute();
             </div>
             <div>
                 <label for="type">Genre</label>
-                <input type="text" name="type" id="type" value="<?=$row['type']?>">
-                <label for="type">Type</label>
                 <select id="type" name="type" id="type">
                     <?php while($row2 = $stmt2->fetch(PDO::FETCH_ASSOC)): ?>
                         <option value="<?=$row2['type']?>"><?=$row2['type']?></option>
