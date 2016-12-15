@@ -9,9 +9,13 @@ if(isset($_GET['id'])){
 
 //requete sql recupere tous les titres de films et id associes dans la table filmuz
 //et trie par ordre alphabetique des titres de films
-$sql = "SELECT `titre`, `id` FROM `filmuz` ORDER BY `titre`";
+$sql = "SELECT `titre`, `id` FROM `filmuz` ORDER BY `titre`;";
 $stmt = $pdo->prepare($sql);
 $stmt->execute();
+
+$sql2 = "SELECT DISTINCT `type` FROM `filmuz`;";
+$stmt2 = $pdo->prepare($sql2);
+$stmt2->execute();
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -39,8 +43,12 @@ $stmt->execute();
                 <input type="text" name="titre" id="titre" placeholder="titre du film" required>
             </div>
             <div>
-                <label for="type">Type</label>
-                <input type="text" name="type" id="type" placeholder="type du film" required>
+                <label for="type">Genre</label>
+                <select id="type" name="type">
+                <?php while($row2 = $stmt2->fetch(PDO::FETCH_ASSOC)): ?>
+                    <option value="<?=$row2['type']?>"><?=$row2['type']?></option>
+                <?php endwhile; ?>
+                </select>
             </div>
             <div>
                 <label for="playlist">Playlist</label>
