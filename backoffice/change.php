@@ -47,31 +47,31 @@ if(!$row){
                 <input type="hidden" name="id" value="<?=$row['id']?>">
             <div>
                 <label for="titre">Titre</label>
-                <input type="text" name="titre" id="titre" value="<?=$row['titre']?>">
+                <input type="text" name="titre" id="titre" value="<?=$row['titre']?>" required>
             </div>
             <div>
                 <label for="type">Type</label>
-                <input type="text" name="type" id="type" value="<?=$row['type']?>">
+                <input type="text" name="type" id="type" value="<?=$row['type']?>" required>
             </div>
             <div>
                 <label for="playlist">Playlist</label>
-                <input type="url" name="playlist" id="playlist" value="<?=$row['playlist']?>">
+                <input type="url" name="playlist" id="playlist" value="<?=$row['playlist']?>" required>
             </div>
             <div>
                 <label for="image">Image </label>
-                <input type="text" name="image" id="image" value="<?=$row['image']?>">
+                <input type="text" name="image" id="image" value="<?=$row['image']?>" required>
             </div>
             <div>
                 <label for="annee">Année</label>
-                <input type="text" name="annee" id="annee" value="<?=$row['annee']?>">
+                <input type="text" name="annee" id="annee" value="<?=$row['annee']?>" required>
             </div>
             <div>
                 <label for="compositeur">Compositeur</label>
-                <input type="text" name="compositeur" id="compositeur" value="<?=$row['compositeur']?>">
+                <input type="text" name="compositeur" id="compositeur" value="<?=$row['compositeur']?>" required>
             </div>
             <div>
                 <label for="compobio">Biographie</label><br/>
-                <textarea rows="10" name="compobio"><?=$row['compobio']?></textarea>
+                <textarea rows="10" name="compobio" required><?=$row['compobio']?></textarea>
             </div>
             <input type="submit" value="Valider">
             </form>
