@@ -52,7 +52,7 @@ $stmt2->execute();
             </div>
             <div>
                 <label for="playlist">Playlist</label>
-                <input type="url" name="playlist" id="playlist" placeholder="lien de la musique" required>
+                <input type="url" name="playlist" id="playlist" placeholder="Inception" required>
             </div>
             <div>
                 <label for="image">Image </label>
@@ -60,15 +60,15 @@ $stmt2->execute();
             </div>
             <div>
                 <label for="annee">Année</label>
-                <input type="text" name="annee" id="annee" placeholder="année du film" required>
+                <input type="text" name="annee" id="annee" placeholder="2010" required>
             </div>
             <div>
                 <label for="compositeur">Compositeur</label>
-                <input type="text" name="compositeur" id="compositeur" placeholder="nom du compositeur" required>
+                <input type="text" name="compositeur" id="compositeur" placeholder="Hans Zimmer" required>
             </div>
             <div>
                 <label for="compobio">Biographie</label>
-                <textarea rows="10" name="compobio" placeholder="description + anecdote" required></textarea>
+                <textarea rows="10" name="compobio" placeholder="Best film ever" required></textarea>
             </div>
             <input type="submit" value="Valider">
             </form>

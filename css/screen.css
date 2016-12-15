@@ -413,6 +413,22 @@ fieldset input[type="submit"] {
     padding: 1rem;
 }
 
+::-webkit-input-placeholder {
+    color: #000;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    color: #000;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+    color: #000;
+}
+
+:-ms-input-placeholder {
+    color: #000;
+}
+
 /*--------NO-SEARCH-RESULT-----*/
 
 .result p {
