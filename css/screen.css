@@ -356,8 +356,10 @@ div.back img {
 }
 
 h3.adm-titre {
-    font: 24px 'Futura Std', Arial, sans-serif;
+    font: 18px 'Futura Std', Arial, sans-serif;
     text-align: center;
+    font-style: italic;
+    font-weight: bold;
 }
 
 .titre-film {

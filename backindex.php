@@ -29,7 +29,7 @@ $stmt->execute();
 
 <div class="adm-index clearfix">
     <div class="add-form">
-        <h3 class="adm-titre">Ajouter un nouveau film</h3>
+        <h3 class="adm-titre">ajouter un nouveau film</h3>
         <fieldset>
 
             <form action="add.php" method="post">
@@ -68,7 +68,7 @@ $stmt->execute();
         </fieldset>
     </div>
     <div class="movie-list">
-        <h3 class="adm-titre">Liste des films</h3>
+        <h3 class="adm-titre">liste des films</h3>
         <?php while($row = $stmt->fetch(PDO::FETCH_ASSOC)): ?>
             <ul>
             <li class="titre-film"><?=$row['titre']?> <span class="actions"><a href="change.php?id=<?=$row['id']?>">Modifier</a> / <a href="delete.php?id=<?=$row['id']?>" onclick="return confirm('Êtes vous sur de vouloir supprimer ce film ?')">Supprimer</a></span></li>
