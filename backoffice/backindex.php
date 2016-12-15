@@ -56,7 +56,7 @@ $stmt2->execute();
             </div>
             <div>
                 <label for="image">Image </label>
-                <input type="text" name="image" required>
+                <input type="text" name="image" placeholder="../img-content/sci-fi/inception.jpg" required>
             </div>
             <div>
                 <label for="annee">Année</label>

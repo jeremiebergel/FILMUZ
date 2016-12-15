@@ -39,7 +39,7 @@ if(!$row){
 <body>
 <?php include "../include/backheader.php"?>
 
-        <h3 class="adm-titre">Modifier le film</h3>
+        <h3 class="adm-titre">modifier le film</h3>
         <div class="change-form">
         <fieldset>
 
@@ -47,31 +47,31 @@ if(!$row){
                 <input type="hidden" name="id" value="<?=$row['id']?>">
             <div>
                 <label for="titre">Titre</label>
-                <input type="text" name="titre" id="titre" value="<?=$row['titre']?>" required>
+                <input type="text" name="titre" id="titre" value="<?=$row['titre']?>">
             </div>
             <div>
                 <label for="type">Type</label>
-                <input type="text" name="type" id="type" value="<?=$row['type']?>" required>
+                <input type="text" name="type" id="type" value="<?=$row['type']?>">
             </div>
             <div>
                 <label for="playlist">Playlist</label>
-                <input type="url" name="playlist" id="playlist" value="<?=$row['playlist']?>" required>
+                <input type="url" name="playlist" id="playlist" value="<?=$row['playlist']?>">
             </div>
             <div>
                 <label for="image">Image </label>
-                <input type="text" name="image" id="image" value="<?=$row['image']?>" required>
+                <input type="text" name="image" id="image" value="<?=$row['image']?>">
             </div>
             <div>
                 <label for="annee">Année</label>
-                <input type="text" name="annee" id="annee" value="<?=$row['annee']?>" required>
+                <input type="text" name="annee" id="annee" value="<?=$row['annee']?>">
             </div>
             <div>
                 <label for="compositeur">Compositeur</label>
-                <input type="text" name="compositeur" id="compositeur" value="<?=$row['compositeur']?>" required>
+                <input type="text" name="compositeur" id="compositeur" value="<?=$row['compositeur']?>">
             </div>
             <div>
                 <label for="compobio">Biographie</label><br/>
-                <textarea rows="10" name="compobio" required><?=$row['compobio']?></textarea>
+                <textarea rows="10" name="compobio"><?=$row['compobio']?></textarea>
             </div>
             <input type="submit" value="Valider">
             </form>
