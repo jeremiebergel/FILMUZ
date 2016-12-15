@@ -7,12 +7,12 @@ if(isset($_GET['id'])){
     $id = (int) $_GET['id'];
 }
 
+//selectionner tous les champs dans filmuz a l'id specifiee
 $sql = "SELECT `id`, `type`, `titre`, `playlist`, `image`, `annee`, `compositeur`, `compobio`
 FROM 
     `filmuz` 
 WHERE 
-  id = :id
-;";
+  id = :id;";
 $stmt = $pdo->prepare($sql);
 $stmt->bindValue(':id', $id, PDO::PARAM_INT);
 $stmt->execute();
@@ -22,6 +22,11 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
 if(!$row){
     header('Location: backindex.php');
 }
+
+//selectionner tous les types differents dans filmuz (pour liste deroulante)
+$sql2 = "SELECT DISTINCT `type` FROM `filmuz`;";
+$stmt2 = $pdo->prepare($sql2);
+$stmt2->execute();
 ?>
 
 
@@ -47,31 +52,38 @@ if(!$row){
                 <input type="hidden" name="id" value="<?=$row['id']?>">
             <div>
                 <label for="titre">Titre</label>
-                <input type="text" name="titre" id="titre" value="<?=$row['titre']?>">
+                <input type="text" name="titre" id="titre" value="<?=$row['titre']?>" required>
             </div>
             <div>
                 <label for="type">Genre</label>
                 <input type="text" name="type" id="type" value="<?=$row['type']?>">
+                <label for="type">Type</label>
+                <select id="type" name="type" id="type">
+                    <?php while($row2 = $stmt2->fetch(PDO::FETCH_ASSOC)): ?>
+                        <option value="<?=$row2['type']?>"><?=$row2['type']?></option>
+                    <?php endwhile; ?>
+                </select>
+
             </div>
             <div>
                 <label for="playlist">Playlist</label>
-                <input type="url" name="playlist" id="playlist" value="<?=$row['playlist']?>">
+                <input type="url" name="playlist" id="playlist" value="<?=$row['playlist']?>" required>
             </div>
             <div>
                 <label for="image">Image </label>
-                <input type="text" name="image" id="image" value="<?=$row['image']?>">
+                <input type="text" name="image" id="image" value="<?=$row['image']?>" required>
             </div>
             <div>
                 <label for="annee">Année</label>
-                <input type="text" name="annee" id="annee" value="<?=$row['annee']?>">
+                <input type="text" name="annee" id="annee" value="<?=$row['annee']?>" required>
             </div>
             <div>
                 <label for="compositeur">Compositeur</label>
-                <input type="text" name="compositeur" id="compositeur" value="<?=$row['compositeur']?>">
+                <input type="text" name="compositeur" id="compositeur" value="<?=$row['compositeur']?>" required>
             </div>
             <div>
                 <label for="compobio">Biographie</label><br/>
-                <textarea rows="10" name="compobio"><?=$row['compobio']?></textarea>
+                <textarea rows="10" name="compobio" required><?=$row['compobio']?></textarea>
             </div>
             <input type="submit" value="Valider">
             </form>

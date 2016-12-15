@@ -13,6 +13,7 @@ $sql = "SELECT `titre`, `id` FROM `filmuz` ORDER BY `titre`;";
 $stmt = $pdo->prepare($sql);
 $stmt->execute();
 
+//selectionne tous les types differents dans filmuz pour menu deroulant
 $sql2 = "SELECT DISTINCT `type` FROM `filmuz`;";
 $stmt2 = $pdo->prepare($sql2);
 $stmt2->execute();
