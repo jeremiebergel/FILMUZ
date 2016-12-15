@@ -50,7 +50,7 @@ if(!$row){
                 <input type="text" name="titre" id="titre" value="<?=$row['titre']?>">
             </div>
             <div>
-                <label for="type">Type</label>
+                <label for="type">Genre</label>
                 <input type="text" name="type" id="type" value="<?=$row['type']?>">
             </div>
             <div>
