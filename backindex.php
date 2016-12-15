@@ -32,7 +32,7 @@ $stmt->execute();
         <h3 class="adm-titre">Ajouter un nouveau film</h3>
         <fieldset>
 
-            <form action="ajouter.php" method="post">
+            <form action="add.php" method="post">
 
             <div>
                 <label for="titre">Titre</label>
@@ -71,7 +71,7 @@ $stmt->execute();
         <h3 class="adm-titre">Liste des films</h3>
         <?php while($row = $stmt->fetch(PDO::FETCH_ASSOC)): ?>
             <ul>
-            <li class="titre-film"><?=$row['titre']?> <span class="actions"><a href="change.php?id=<?=$row['id']?>">Modifier</a> / <a href="del.php?id=<?=$row['id']?>" onclick="return confirm('Êtes vous sur de vouloir supprimer ce film ?')">Supprimer</a></span></li>
+            <li class="titre-film"><?=$row['titre']?> <span class="actions"><a href="change.php?id=<?=$row['id']?>">Modifier</a> / <a href="delete.php?id=<?=$row['id']?>" onclick="return confirm('Êtes vous sur de vouloir supprimer ce film ?')">Supprimer</a></span></li>
             </ul>
         <?php endwhile; ?>
 
