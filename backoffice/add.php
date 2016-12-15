@@ -19,5 +19,9 @@ $stmt->bindValue(':compobio', $_POST['compobio'], PDO::PARAM_STR);
 
 $stmt->execute();
 
+if($_POST['image'] !== '') {
+    $_POST['image'] = 'img-content/default.png';
+}
+
 //retour backindex.php pour verifier ajout dans "Liste des films"
 header('Location: backindex.php');
