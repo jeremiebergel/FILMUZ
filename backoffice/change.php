@@ -7,12 +7,12 @@ if(isset($_GET['id'])){
     $id = (int) $_GET['id'];
 }
 
+//selectionner tous les champs dans filmuz a l'id specifiee
 $sql = "SELECT `id`, `type`, `titre`, `playlist`, `image`, `annee`, `compositeur`, `compobio`
 FROM 
     `filmuz` 
 WHERE 
-  id = :id
-;";
+  id = :id;";
 $stmt = $pdo->prepare($sql);
 $stmt->bindValue(':id', $id, PDO::PARAM_INT);
 $stmt->execute();
@@ -22,6 +22,11 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
 if(!$row){
     header('Location: backindex.php');
 }
+
+//selectionner tous les types differents dans filmuz (pour liste deroulante)
+$sql2 = "SELECT DISTINCT `type` FROM `filmuz`;";
+$stmt2 = $pdo->prepare($sql2);
+$stmt2->execute();
 ?>
 
 
@@ -50,8 +55,12 @@ if(!$row){
                 <input type="text" name="titre" id="titre" value="<?=$row['titre']?>" required>
             </div>
             <div>
-                <label for="type">Type</label>
-                <input type="text" name="type" id="type" value="<?=$row['type']?>" required>
+                <label for="type">Genre</label>
+                <select id="type" name="type" required>
+                    <?php while($row2 = $stmt2->fetch(PDO::FETCH_ASSOC)): ?>
+                        <option value="<?=$row2['type']?>"><?=$row2['type']?></option>
+                    <?php endwhile; ?>
+                </select>
             </div>
             <div>
                 <label for="playlist">Playlist</label>
