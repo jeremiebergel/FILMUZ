@@ -368,6 +368,14 @@ h3.adm-titre {
     font: 16px "Slabo 27px", serif;
 }
 
+.titre-film a {
+    color: #999;
+}
+
+.titre-film a:hover {
+    color: #000;
+}
+
 .titre-film span {
     font-size: 12px;
     margin-left: 2rem;
@@ -377,9 +385,7 @@ h3.adm-titre {
     color: #ccc;
 }
 
-.titre-film a:hover {
-    color: #000;
-}
+
 
 .change-form {
     width: 60%;

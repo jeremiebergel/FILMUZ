@@ -9,7 +9,7 @@ if(isset($_GET['id'])){
 
 //requete sql recupere tous les titres de films et id associes dans la table filmuz
 //et trie par ordre alphabetique des titres de films
-$sql = "SELECT `titre`, `id` FROM `filmuz` ORDER BY `titre`;";
+$sql = "SELECT `titre`, `id`, `type` FROM `filmuz` ORDER BY `titre`;";
 $stmt = $pdo->prepare($sql);
 $stmt->execute();
 
@@ -80,7 +80,7 @@ $stmt2->execute();
         <h3 class="adm-titre">liste des films</h3>
         <?php while($row = $stmt->fetch(PDO::FETCH_ASSOC)): ?>
             <ul>
-            <li class="titre-film"><?=$row['titre']?> <span class="actions"><a href="change.php?id=<?=$row['id']?>">Modifier</a> /
+            <li class="titre-film"><a href="../song-info.php?type=<?=$row['type']?>&id=<?=$row['id']?>"><?=$row['titre']?></a> <span class="actions"><a href="change.php?id=<?=$row['id']?>">Modifier</a> /
             <a href="delete.php?id=<?=$row['id']?>" onclick="return confirm('Êtes vous sur de vouloir supprimer ce film ?')">Supprimer</a></span></li>
             </ul>
         <?php endwhile; ?>
