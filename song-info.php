@@ -8,7 +8,7 @@ if(isset($_GET['id'])){
 
 $sql = "SELECT `type`, `titre`, `playlist`, `image`, `annee`, `compositeur`, `compobio` FROM `filmuz` WHERE `id` = :id;";
 $stmt = $pdo->prepare($sql);
-$stmt->bindValue(':id', $id, PDO::PARAM_INT);
+$stmt->bindValue(':id', $id, PDO::PARAM_INT); // associer un nom (:) a ma variable ($), au type de valeur (PDO).
 $stmt->execute();
 $row = $stmt->fetch(PDO::FETCH_ASSOC);
 if (!$row){

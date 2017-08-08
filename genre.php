@@ -32,7 +32,7 @@ $stmt_row4->execute();
     <section>
         <?php
         //afficher toutes les affiches ('image' dans la bdd)
-        while($row4 = $stmt_row4->fetch(PDO::FETCH_ASSOC)):
+        while($row4 = $stmt_row4->fetch(PDO::FETCH_ASSOC)): // parcourir le tableau
          ?>
             <div>
                 <a href="song-info.php?type=<?=$row4['type']?>&id=<?=$row4['id']?>"><img src="<?=$row4['image']?>" alt="<?=$row4['titre']?>" class="affiche"></a>
